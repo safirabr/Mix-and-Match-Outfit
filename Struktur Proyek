@@ -1,0 +1,14 @@
+outfit_recommendation/
+│
+├── data/
+│   └── outfits.json
+│
+├── modules/
+│   ├── __init__.py
+│   ├── menu.py
+│   ├── tren.py
+│   ├── preferensi.py
+│   └── warna.py
+│
+├── main.py
+└── README.md

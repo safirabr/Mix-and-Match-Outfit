@@ -2,7 +2,7 @@
 ## Kelompok     : 12
 ## Anggota      :
 - I0324096 	    Nu'aim Alfaruqyannaf	    (Nuaim23)
-- I032409       Safira Budi Ramadhani       (safirabr)
+- I0324100       Safira Budi Ramadhani       (safirabr)
 - I0324106      Lintang Nibras Puspita Ayu  (Ayulintang16) 
 
 # Mix and Match Outfit Program

@@ -12,18 +12,23 @@ Program ini memberikan rekomendasi outfit berdasarkan tiga kategori:
 1. Tren (Korean/Western)
    
 o   pilihan: western atau Korean.
+
 o	pilihan untuk Korean    : Feminin, manis, kasual, chic, nyaman, stylish, bohemian, trendy, santai, street, siluet, smart, sporty.
+
 o	pilihan untuk western   : Stylish, chic, santai, nyaman, street, acara, elegan, youthful, layered, rapi, winter, edgy, classy, kasual.
 
 2. Preferensi (Gelap/Terang)
    
 o	pilihan: gelap atau terang.
+
 o	pilihan untuk terang    : Ceria, segar, cerah, lembut, sleek, cozy, sporty, bohemian, berani, santai.
+
 o	pilihan untuk gelap     : Sleek, cozy, edgy, chic, santai, sporty, formal, profesional, hangat.
 
 3. Warna
    
 o	pilihan: merah, kuning, hijau, biru, hitam, putih, abu-abu, ungu, coklat, oranye, pink, biru muda, atau hijau tua
+
 o   pilihan kategori: ditentukan warna yang anda pilih
 
 ## Cara Menjalankan

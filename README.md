@@ -5,7 +5,7 @@
 - I032409       Safira Budi Ramadhani       (safirabr)
 - I0324106      Lintang Nibras Puspita Ayu  (Ayulintang16) 
 
-# Rekomendasi Outfit Program
+# Mix and Match Outfit Program
 
 ## Deskripsi
 Program ini memberikan rekomendasi outfit berdasarkan tiga kategori:

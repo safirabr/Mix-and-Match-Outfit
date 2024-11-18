@@ -1,0 +1,15 @@
+my_outfit_advisor/
+├── images/           # Folder untuk gambar pakaian
+├── assets/           # Folder untuk aset lainnya (misalnya logo)
+├── data.json         # File JSON yang menyimpan data outfit
+├── app.py            # Skrip utama untuk menjalankan aplikasi
+├── gui/              # Paket untuk GUI
+│   ├── __init__.py   # Menandakan ini adalah paket
+│   ├── window.py     # Modul untuk membuat window utama dan layout
+│   ├── widgets.py    # Modul untuk widget-widget umum (tombol, radio button, dll.)
+│   └── image.py      # Modul untuk menangani gambar
+├── data/             # Paket untuk memuat dan mengelola data
+│   ├── __init__.py
+│   ├── data_loader.py  # Modul untuk memuat data JSON
+│   └── outfits.py     # Modul untuk menangani data outfit
+└── requirements.txt  # File dependensi

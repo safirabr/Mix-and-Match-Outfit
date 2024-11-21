@@ -1,11 +1,11 @@
 ## Kelas        : C
 ## Kelompok     : 12
 ## Anggota      :
-- I0324096 	    Nu'aim Alfaruqyannaf	    (Nuaim23)
+- I0324096      Nu'aim Alfaruqyannaf        (Nuaim23)
 - I0324100       Safira Budi Ramadhani       (safirabr)
 - I0324106      Lintang Nibras Puspita Ayu  (Ayulintang16) 
 
-# Mix and Match Outfit Program
+# My Outfit Advisor
 
 ## Deskripsi
 Program ini memberikan rekomendasi outfit berdasarkan tiga kategori:
@@ -13,21 +13,21 @@ Program ini memberikan rekomendasi outfit berdasarkan tiga kategori:
    
 o   pilihan: western atau Korean.
 
-o	pilihan untuk Korean    : Feminin, manis, kasual, chic, nyaman, stylish, bohemian, trendy, santai, street, siluet, smart, sporty.
+o   pilihan untuk Korean    : Feminin, manis, kasual, chic, nyaman, stylish, bohemian, trendy, santai, street, siluet, smart, sporty.
 
-o	pilihan untuk western   : Stylish, chic, santai, nyaman, street, acara, elegan, youthful, layered, rapi, winter, edgy, classy, kasual.
+o   pilihan untuk western   : Stylish, chic, santai, nyaman, street, acara, elegan, youthful, layered, rapi, winter, edgy, classy, kasual.
 
 2. Preferensi (Gelap/Terang)
    
-o	pilihan: gelap atau terang.
+o   pilihan: gelap atau terang.
 
-o	pilihan untuk terang    : Ceria, segar, cerah, lembut, sleek, cozy, sporty, bohemian, berani, santai.
+o   pilihan untuk terang    : Ceria, segar, cerah, lembut, sleek, cozy, sporty, bohemian, berani, santai.
 
-o	pilihan untuk gelap     : Sleek, cozy, edgy, chic, santai, sporty, formal, profesional, hangat.
+o   pilihan untuk gelap     : Sleek, cozy, edgy, chic, santai, sporty, formal, profesional, hangat.
 
 3. Warna
    
-o	pilihan: merah, kuning, hijau, biru, hitam, putih, abu-abu, ungu, coklat, oranye, pink, biru muda, atau hijau tua
+o   pilihan: merah, kuning, hijau, biru, hitam, putih, abu-abu, ungu, coklat, oranye, pink, biru muda, atau hijau tua
 
 o   pilihan kategori: ditentukan warna yang anda pilih
 

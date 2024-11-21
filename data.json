@@ -45,7 +45,7 @@
     },
     "terang": {
       "ceria": "Kaos Putih + Rok Paduan Warna Pastel",
-      "segara": "Blouse Kuning Cerah + Celana Jeans Biru Muda",
+      "Segar": "Blouse Kuning Cerah + Celana Jeans Biru Muda",
       "cerah": "Dress Floral Berwarna Cerah + Sandal Putih",
       "lembut": "Sweater Pink Muda + Celana Chino Beige",
       "sleek": "Kemeja Hijau Lime + Rok Denim",
@@ -58,7 +58,7 @@
   "warna": {
     "merah": {
       "bold": "Merah & Hitam",
-      "segara": "Merah & Putih",
+      "Segar": "Merah & Putih",
       "modern": "Merah & Abu-abu",
       "chic": "Merah & Navy",
       "ceria": "Merah & Kuning",
@@ -195,7 +195,7 @@
       "earthy": "Biru Muda & Merah Muda",
       "ceria": "Biru Muda & Coklat",
       "fresh": "Biru Muda & Hijau",
-      "playful": "Biru Muda & Kuning",
+      "playful": "Biru Muda & lemon",
       "soft": "Biru Muda & Pink",
       "romantis": "Biru Muda & Oranye",
       "vibrant": "Biru Muda & Ungu"
@@ -208,7 +208,7 @@
       "chic": "Hijau Tua & Biru Navy",
       "cool": "Hijau Tua & Merah",
       "fresh": "Hijau Tua & Pink",
-      "romantis": "Hijau Tua & Kuning",
+      "romantis": "Hijau Tua & Kuning gold",
       "vibrant": "Hijau Tua & Ungu",
       "playful": "Hijau Tua & Orange"
     }

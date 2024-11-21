@@ -1,23 +1,28 @@
+import os
+import json
 from gui.window import create_window
 from data.data_loader import load_data
-import json
 
 def load_outfits_data(filepath):
-    with open(filepath, 'r', encoding='utf-8') as file:
-        return json.load(file)
-def main():
-    # Memuat data dari file JSON
-    outfits_data = load_data()
+    try:
+        with open(filepath, 'r', encoding='utf-8') as file:
+            return json.load(file)
+    except FileNotFoundError:
+        print(f"Error: The file '{filepath}' was not found in {os.getcwd()}.")
+        return None
 
-    # Membuat jendela aplikasi
+def main():
+    # Load data from JSON
+    outfits_data = load_outfits_data(filepath)
+    if outfits_data is None:
+        return  # Exit if data cannot be loaded
+
+    # Create application window
     create_window(outfits_data)
 
 if __name__ == "__main__":
-    # Path ke file JSON
+    # Path to JSON file
     filepath = r"data.json"
 
-    # Load data JSON
-    outfits_data = load_outfits_data(filepath)
-
-    # Jalankan GUI
+    # Run GUI
     main()

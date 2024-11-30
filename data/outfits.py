@@ -1,10 +1,11 @@
-def get_outfit_suggestion(category, sub_category, data):
-    # Cek apakah kategori ada di data
-    if category in data:
-        category_data = data[category]
-        if sub_category in category_data:
-            return category_data[sub_category]
+def get_outfit_suggestion(style, sub_style, data):
+    # Cek apakah style ada di data
+    if style in data:
+        style_data = data[style]
+        if sub_style in style_data:
+            return style_data[sub_style]
         else:
-            return "Subkategori tidak ditemukan"
+            return "Sub style tidak ditemukan"
     else:
-        return "Kategori tidak ditemukan"
+        return "style tidak ditemukan"
+

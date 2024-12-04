@@ -1,179 +1,159 @@
+import json
 import tkinter as tk
-from tkinter import messagebox
-from PIL import Image, ImageTk
-from gui.widgets import create_label, create_radio_button
+from tkinter import messagebox, PhotoImage
+from gui.widgets import create_button, create_label, create_radio_button, create_category_radio_buttons
 from gui.image import show_image
-from data.outfits import get_outfit_suggestion
 
+# Fungsi untuk mendapatkan rekomendasi outfit
+def get_outfit_suggestion(category, sub_category, sub_style, outfits_data):
+    try:
+        return outfits_data[category][sub_category][sub_style]
+    except KeyError:
+        return None
+
+# Fungsi untuk membuat window wajah (face) 1
+def create_category_face(window, outfits_data, category_variable, sub_category_variable, sub_style_variable, update_sub_categories, frame):
+    # Face 1: Kategori
+    create_label(frame, text="Select Category:", font=("Arial", 14), fg="#33b5b5", bg="#f2f2f2", pady=10)
+    create_category_radio_buttons(frame, list(outfits_data.keys()), update_sub_categories, category_variable)
+
+# Fungsi untuk membuat window wajah (face) 2
+def create_sub_category_face(window, outfits_data, category_variable, sub_category_variable, sub_style_variable, update_sub_styles, frame):
+    # Face 2: Subcategory
+    def update_sub_styles(*args):
+        category = category_variable.get()
+        sub_category = sub_category_variable.get()
+        if category and sub_category:
+            sub_styles = list(outfits_data[category][sub_category].keys())
+        else:
+            sub_styles = []
+        
+        # Menghapus radio button lama dan membuat yang baru
+        for widget in frame.winfo_children():
+            if hasattr(widget, "radio_sub_style"):
+                widget.destroy()
+
+        create_radio_button(frame, sub_styles, update_outfit, sub_style_variable)
+
+    create_label(frame, text="Select Subcategory:", font=("Arial", 14), fg="#33b5b5", bg="#f2f2f2", pady=10)
+    create_radio_button(frame, [], update_sub_styles, sub_category_variable)
+
+# Fungsi untuk membuat window wajah (face) 3
+def create_sub_style_face(window, outfits_data, category_variable, sub_category_variable, sub_style_variable, update_outfit, frame):
+    # Face 3: Sub-style
+    create_label(frame, text="Select Sub-Style:", font=("Arial", 14), fg="#33b5b5", bg="#f2f2f2", pady=10)
+    create_radio_button(frame, [], update_outfit, sub_style_variable)
+
+# Fungsi untuk membuat window wajah (face) 4
+def create_outfit_face(window, outfits_data, category_variable, sub_category_variable, sub_style_variable, frame, update_outfit):
+    # Face 4: Outfit Suggestion
+    def update_outfit_inner():
+        category = category_variable.get()
+        sub_category = sub_category_variable.get()
+        sub_style = sub_style_variable.get()
+
+        if category and sub_category and sub_style:
+            outfit = get_outfit_suggestion(category, sub_category, sub_style, outfits_data)
+            if outfit:
+                create_label(frame, text=f"Recommended Outfit: {outfit}", font=("Arial", 12), fg="#333333", bg="#f2f2f2", pady=20)
+                show_image(frame, outfit)  # Tampilkan gambar outfit
+            else:
+                messagebox.showwarning("Warning", "No outfit found for the selected options.")
+        else:
+            messagebox.showwarning("Warning", "Please select all options.")
+
+    create_button(frame, text="Get Outfit", font=("Arial", 14), bg="#ff6f61", fg="white", command=update_outfit_inner, pady=10)
+
+# Fungsi untuk membuat window utama
 def create_window(outfits_data):
-    # Inisialisasi jendela utama
+    # Inisialisasi window utama
     window = tk.Tk()
     window.title("My Outfit Advisor")
     window.geometry("800x600")
-    window.config(bg="#f2f2f2")
+    window.config(bg="#f2f2f2")  # Warna pastel
 
-    # Pesan selamat datang
-    messagebox.showinfo("Selamat Datang", "Selamat datang di Your Outfit Advisor!")
+    # Header
+    create_label(window, text="My Outfit Advisor", font=("Arial", 24, "bold"), fg="#33b5b5", bg="#f2f2f2", pady=20)
 
-    # Menambahkan logo
-    try:
-        logo_path = "assets/logo.jpg"
-        logo_img = Image.open(logo_path).resize((800, 400))
-        logo_photo = ImageTk.PhotoImage(logo_img)
-        logo_label = tk.Label(window, image=logo_photo, bg="#f2f2f2")
-        logo_label.image = logo_photo
-        logo_label.pack(pady=20)
-    except Exception as e:
-        print(f"Error memuat logo: {e}")
+    # Variabel untuk kategori dan subkategori
+    category_variable = tk.StringVar()
+    sub_category_variable = tk.StringVar()
+    sub_style_variable = tk.StringVar()
 
-    # Frame untuk setiap "Face"
-    frames = {
-        "utama": tk.Frame(window, bg="#f2f2f2"),
-        "tren": tk.Frame(window, bg="#f2f2f2"),
-        "preferensi": tk.Frame(window, bg="#f2f2f2"),
-        "warna": tk.Frame(window, bg="#f2f2f2"),
-        "result": tk.Frame(window, bg="#f2f2f2"),
-    }
+    # Create frames for each face
+    frame_category = tk.Frame(window, bg="#f2f2f2")
+    frame_sub_category = tk.Frame(window, bg="#f2f2f2")
+    frame_sub_style = tk.Frame(window, bg="#f2f2f2")
+    frame_outfit = tk.Frame(window, bg="#f2f2f2")
 
-    def show_frame(frame_name):
-        for frame in frames.values():
-            frame.pack_forget()
-        frames[frame_name].pack(fill="both", expand=True)
+    # Add all frames to the window
+    frame_category.pack(fill="both", expand=True)
+    frame_sub_category.pack(fill="both", expand=True)
+    frame_sub_style.pack(fill="both", expand=True)
+    frame_outfit.pack(fill="both", expand=True)
 
-    # Halaman utama (Face 1)
-    def create_main_page():
-        create_label(
-            frames["utama"], 
-            text="Pilih Kategori", 
-            font=("Arial", 24, "bold"), 
-            fg="#33b5b5", 
-            bg="#f2f2f2", 
-            pady=20
-        )
-        categories = {
-            "Tren": "tren",
-            "Preferensi": "preferensi",
-            "Warna": "warna",
-        }
-        for category, frame_name in categories.items():
-            tk.Button(
-                frames["utama"], 
-                text=category, 
-                font=("Arial", 14), 
-                bg="#33b5b5", 
-                fg="white", 
-                command=lambda name=frame_name: show_frame(name)
-            ).pack(pady=10)
+    # Function to raise frames based on the steps
+    def raise_frame(frame):
+        frame.tkraise()
 
-    create_main_page()
-
-    # Subkategori untuk setiap kategori (Face 2)
-    subcategories = {
-        "tren": ["Western", "Korean"],
-        "preferensi": ["Gelap", "Casual"],
-        "warna": [
-            "Merah", "Kuning", "Hijau", "Biru", "Hitam", "Putih", "Abu-abu",
-            "Ungu", "Coklat", "Oranye", "Pink", "Biru Muda", "Hijau Tua"
-        ],
-    }
-
-    selected_subcategory = tk.StringVar()
-
-    def create_subcategory_page(category):
-        create_label(
-            frames[category],
-            text=f"Pilih {category.capitalize()}",
-            font=("Arial", 20, "bold"),
-            fg="#33b5b5",
-            bg="#f2f2f2",
-            pady=20
-        )
-
-        for sub in subcategories[category]:
-            create_radio_button(
-                frames[category], 
-                text=sub, 
-                variable=selected_subcategory, 
-                value=sub
-            )
-
-        tk.Button(
-            frames[category], 
-            text="Lanjutkan", 
-            font=("Arial", 14), 
-            bg="#33b5b5", 
-            fg="white", 
-            command=lambda: show_frame("result")
-        ).pack(pady=20)
-
-        tk.Button(
-            frames[category], 
-            text="Kembali", 
-            font=("Arial", 12), 
-            bg="#ff6f61", 
-            fg="white", 
-            command=lambda: show_frame("utama")
-        ).pack(pady=10)
-
-    for category in subcategories.keys():
-        create_subcategory_page(category)
-
-    # Halaman hasil (Face 3 & 4)
-    def create_result_page():
-        def display_result():
-            choice = selected_subcategory.get()
-            suggestion = get_outfit_suggestion(outfits_data, choice)
-
-            for widget in frames["result"].winfo_children():
+    # Define the update_sub_categories function here
+    def update_sub_categories(*args):
+        category = category_variable.get()
+        if category:
+            sub_categories = list(outfits_data[category].keys())
+        else:
+            sub_categories = []
+        
+        # Menghapus radio button lama dan membuat yang baru
+        for widget in frame_category.winfo_children():
+            if hasattr(widget, "radio_sub_category"):
                 widget.destroy()
 
-            if suggestion:
-                create_label(
-                    frames["result"], 
-                    text=f"Rekomendasi untuk {choice}", 
-                    font=("Arial", 20, "bold"), 
-                    fg="#33b5b5", 
-                    bg="#f2f2f2", 
-                    pady=20
-                )
-                try:
-                    image_path = suggestion["image"]
-                    show_image(frames["result"], image_path)
-                except KeyError:
-                    create_label(
-                        frames["result"], 
-                        text="Gambar tidak tersedia.", 
-                        font=("Arial", 14), 
-                        fg="red", 
-                        bg="#f2f2f2"
-                    )
+        create_radio_button(frame_category, sub_categories, update_sub_styles, sub_category_variable)
+        raise_frame(frame_sub_category)  # Switch to sub-category face
+
+    # Define the update_sub_styles function here
+    def update_sub_styles(*args):
+        category = category_variable.get()
+        sub_category = sub_category_variable.get()
+        if category and sub_category:
+            sub_styles = list(outfits_data[category][sub_category].keys())
+        else:
+            sub_styles = []
+        
+        # Menghapus radio button lama dan membuat yang baru
+        for widget in frame_sub_category.winfo_children():
+            if hasattr(widget, "radio_sub_style"):
+                widget.destroy()
+
+        create_radio_button(frame_sub_category, sub_styles, update_outfit, sub_style_variable)
+        raise_frame(frame_sub_style)  # Switch to sub-style face
+
+    # Define the update_outfit function here
+    def update_outfit():
+        category = category_variable.get()
+        sub_category = sub_category_variable.get()
+        sub_style = sub_style_variable.get()
+
+        if category and sub_category and sub_style:
+            outfit = get_outfit_suggestion(category, sub_category, sub_style, outfits_data)
+            if outfit:
+                create_label(frame_outfit, text=f"Recommended Outfit: {outfit}", font=("Arial", 12), fg="#333333", bg="#f2f2f2", pady=20)
+                show_image(frame_outfit, outfit)  # Tampilkan gambar outfit
             else:
-                create_label(
-                    frames["result"], 
-                    text="Tidak ada rekomendasi ditemukan.", 
-                    font=("Arial", 14), 
-                    fg="red", 
-                    bg="#f2f2f2"
-                )
+                messagebox.showwarning("Warning", "No outfit found for the selected options.")
+        else:
+            messagebox.showwarning("Warning", "Please select all options.")
+        raise_frame(frame_outfit)  # Switch to outfit suggestion face
 
-            tk.Button(
-                frames["result"], 
-                text="Kembali", 
-                font=("Arial", 14), 
-                bg="#ff6f61", 
-                fg="white", 
-                command=lambda: show_frame("utama")
-            ).pack(pady=20)
+    # Call the functions to create faces
+    create_category_face(window, outfits_data, category_variable, sub_category_variable, sub_style_variable, update_sub_categories, frame_category)
+    create_sub_category_face(window, outfits_data, category_variable, sub_category_variable, sub_style_variable, update_sub_styles, frame_sub_category)
+    create_sub_style_face(window, outfits_data, category_variable, sub_category_variable, sub_style_variable, update_outfit, frame_sub_style)
+    create_outfit_face(window, outfits_data, category_variable, sub_category_variable, sub_style_variable, frame_outfit, update_outfit)
 
-        selected_subcategory.trace("w", lambda *args: display_result())
+    # Show the category face first
+    raise_frame(frame_category)
 
-    create_result_page()
-
-    # Fungsi untuk menangani penutupan aplikasi
-    def on_closing():
-        if messagebox.askyesno("Konfirmasi", "Sampai jumpa! Apakah Anda yakin ingin keluar?"):
-            window.destroy()
-
-    window.protocol("WM_DELETE_WINDOW", on_closing)
-    show_frame("utama")
+    # Menjalankan window utama
     window.mainloop()

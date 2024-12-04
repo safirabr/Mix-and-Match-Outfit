@@ -57,3 +57,4 @@ def create_category_radio_buttons(parent, categories, command, variable):
     """
     for category in categories:
         create_radio_button(parent, [category], command, variable)
+

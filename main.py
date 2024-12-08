@@ -28,16 +28,17 @@ def main():
         print("Error: No outfit data loaded.")
         return
 
-    # Step 1: Select Category
+     # Step 1: Select Category
     selected_category = load_selected_category()
     if not selected_category:
         root = tk.Tk()
         root.title("Category")
         root.geometry("1700x1100")
-        root.config(bg="#f2f2f2")
+        root.config(bg="#CCC0A9")
         create_category_frame(outfits_data, root)
-        root.mainloop()
-        selected_category = load_selected_category()
+        root.mainloop()  # Wait for user interaction
+        selected_category = load_selected_category()  # Reload the selected category after window is closed
+
     if not selected_category:
         print("Error: No category selected. Exiting.")
         return
@@ -48,8 +49,8 @@ def main():
     if not selected_sub_category:
         root = tk.Tk()
         root.title("Select Sub-Category")
-        root.geometry("800x600")
-        root.config(bg="#f2f2f2")
+        root.geometry("1700x1100")
+        root.config(bg="#CCC0A9")
         create_sub_category_frame(filtered_by_category, root, selected_category)
         root.mainloop()
         selected_sub_category = load_selected_sub_category()
@@ -63,8 +64,8 @@ def main():
     if not selected_style:
         root = tk.Tk()
         root.title("Select Style")
-        root.geometry("800x600")
-        root.config(bg="#f2f2f2")
+        root.geometry("1700x1100")
+        root.config(bg="#CCC0A9")
         create_style_frame(filtered_by_sub_category, root, selected_category, selected_sub_category)
         root.mainloop()
         selected_style = load_selected_style()
@@ -79,8 +80,8 @@ def main():
         return
     root = tk.Tk()
     root.title("Select Sub-Style")
-    root.geometry("800x600")
-    root.config(bg="#f2f2f2")
+    root.geometry("1700x1100")
+    root.config(bg="#CCC0A9")
     create_sub_style_frame(filtered_by_style, root, selected_category, selected_sub_category, selected_style)
     root.mainloop()
 

@@ -1,5 +1,7 @@
 import json
 import tkinter as tk
+from PIL import Image, ImageTk
+
 
 
 def load_outfits_data(filepath):
@@ -62,34 +64,67 @@ def filter_data_by_sub_category(data, sub_category):
 
 
 def create_style_frame(data, root, selected_category, selected_sub_category):
-    """Create a frame with style buttons dynamically."""
-    frame = tk.Frame(root, bg="#f2f2f2")
+    """Create a frame with style buttons dynamically and use an image as the background."""
+    frame = tk.Frame(root)
     frame.pack(fill="both", expand=True)
 
-    tk.Label(
-        frame,
+    # Create Canvas for the background image
+    canvas = tk.Canvas(frame, width=root.winfo_screenwidth(), height=root.winfo_screenheight())
+    canvas.pack(fill="both", expand=True)
+
+    try:
+        # Load and resize the background image
+        image = Image.open("images/background3.jpeg")  # Path to background image
+        bg_image = ImageTk.PhotoImage(image.resize((root.winfo_screenwidth(), root.winfo_screenheight())))
+        canvas.create_image(0, 0, image=bg_image, anchor="nw")
+
+        # Keep a reference to avoid garbage collection
+        frame.bg_image = bg_image
+    except Exception as e:
+        print(f"Error loading image: {e}")
+
+    # Create header label
+    canvas.create_text(
+        400, 50,
         text=f"Category: {selected_category} | Sub-Category: {selected_sub_category}",
         font=("Arial", 16, "bold"),
-        bg="#f2f2f2",
-        fg="#33b5b5"
-    ).pack(pady=20)
+        fill="#C6C09C"
+    )
 
+    # Get unique styles
     styles = get_unique_values(data, "style")
 
+    # Function to handle style selection
     def on_style_selected(style):
         save_selected_style(style)  # Save the selected style
         print(f"Style selected: {style}")
         root.destroy()  # Close the Tkinter window after saving the style
 
-    for style in styles:
-        tk.Button(
+    # Create buttons for each style and place them on the canvas
+    for idx, style in enumerate(styles):
+        btn = tk.Button(
             frame,
             text=style,
             font=("Arial", 14),
-            bg="#33b5b5",
+            bg="#C6C09C",
             fg="white",
             command=lambda st=style: on_style_selected(st)
-        ).pack(pady=5)
+        )
+        canvas.create_window(400, 100 + idx * 50, window=btn)  # Position the button dynamically
+
+    # Create the "Exit Aplikasi" button
+    def exit_application():
+        root.quit()  # Close the Tkinter window
+
+    exit_button = tk.Button(
+        frame,
+        text="Exit Aplikasi",
+        font=("Arial", 14),
+        bg="#ff6666",
+        fg="white",
+        command=exit_application
+    )
+    canvas.create_window(400, 100 + len(styles) * 50 + 20, window=exit_button)  # Position the exit button
 
     return frame
 
@@ -123,7 +158,7 @@ def main():
     root = tk.Tk()
     root.title("Style Frame")
     root.geometry("800x600")
-    root.config(bg="#f2f2f2")
+    root.config(bg="#CCC0A9")
 
     # Create style frame
     create_style_frame(filtered_data, root, selected_category, selected_sub_category)

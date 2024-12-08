@@ -71,6 +71,10 @@ o   pilihan kategori: ditentukan warna yang anda pilih
    
 - Setelah rekomendasi ditampilkan, program akan selesai dan kembali ke menu awal atau keluar.
 
+## FLOWCHART
+![flowchart drawio (1)](https://github.com/user-attachments/assets/108e29c7-2ad0-412e-91bf-9134109f5ea4)
+
+
 ## Keterangan
 Berdasarkan input yang dipilih, program akan menampilkan rekomendasi outfit yang sesuai dengan gaya, preferensi, dan warna yang telah dipilih.
 

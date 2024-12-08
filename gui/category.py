@@ -1,5 +1,6 @@
-import json
 import tkinter as tk
+import json
+from PIL import Image, ImageTk
 
 
 def load_outfits_data(filepath):
@@ -15,11 +16,9 @@ def load_outfits_data(filepath):
         print(f"Error loading file {filepath}: {e}")
         return []
 
-
 def get_unique_values(data, key):
     """Extract unique values for a specific key from the outfit data."""
     return sorted(set(item[key] for item in data if key in item))
-
 
 def save_selected_category(category):
     """Save the selected category to a JSON file."""
@@ -32,55 +31,52 @@ def save_selected_category(category):
 
 
 def create_category_frame(data, root):
-    """Create a frame with category buttons dynamically."""
-    frame = tk.Frame(root, bg="#f2f2f2")
+    """Create a frame with category buttons dynamically and use an image as the background."""
+    frame = tk.Frame(root)
     frame.pack(fill="both", expand=True)
 
-    tk.Label(frame, text="Select a Category", font=("Arial", 16, "bold"), bg="#f2f2f2", fg="#33b5b5").pack(pady=20)
+    # Create Canvas for the background image
+    canvas = tk.Canvas(frame, width=root.winfo_screenwidth(), height=root.winfo_screenheight())
+    canvas.pack(fill="both", expand=True)
+
+    try:
+        image = Image.open("images/background1.jpeg")  # Specify the image path here
+        bg_image = ImageTk.PhotoImage(image.resize((root.winfo_screenwidth(), root.winfo_screenheight())))
+        canvas.create_image(0, 0, image=bg_image, anchor="nw")
+
+        # Keep a reference to avoid garbage collection
+        frame.bg_image = bg_image
+    except Exception as e:
+        print(f"Error loading image: {e}")
+
+    # Create Category Label
+    tk.Label(frame, text="Select a Category", font=("Arial", 16, "bold"), fg="#33b5b5").pack(pady=20)
 
     categories = get_unique_values(data, "category")
 
     def on_category_selected(category):
         save_selected_category(category)
-        print(f"Category selected: {category}")
-        root.destroy()  # Close the current Tkinter window
+        root.destroy()
 
+    # Create buttons for each category and place them on the canvas
     for category in categories:
-        tk.Button(
+        btn = tk.Button(
             frame,
             text=category,
             font=("Arial", 14),
             bg="#33b5b5",
             fg="white",
             command=lambda cat=category: on_category_selected(cat)
-        ).pack(pady=5)
+        )
+        canvas.create_window(600, 100 + categories.index(category) * 60, window=btn)  # Position the button
 
-    return frame
-
-
-def main():
-    """Main function to create the Tkinter app and load category frame."""
-    # Load data
-    filepath = "data.json"  # Adjust to your JSON file path
-    outfits_data = load_outfits_data(filepath)
-
-    if not outfits_data:
-        print("Error: No data loaded.")
-        return
-
-    # Initialize Tkinter window
-    root = tk.Tk()
-    root.title("Category Frame")
-    root.geometry("1700x1100")
-    root.config(bg="#f2f2f2")
-    
-
-    # Create category frame
-    create_category_frame(outfits_data, root)
-
-    # Run the Tkinter main loop
-    root.mainloop()
-
-
-if __name__ == "__main__":
-    main()
+    # Exit Button
+    exit_btn = tk.Button(
+        frame,
+        text="Exit Aplikasi",
+        font=("Arial", 14),
+        bg="#ff6666",
+        fg="white",
+        command=root.quit
+    )
+    canvas.create_window(600, 500, window=exit_btn)  # Place the Exit button in the canvas

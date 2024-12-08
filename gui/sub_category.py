@@ -29,6 +29,16 @@ def load_selected_category():
         return None
 
 
+def save_selected_sub_category(sub_category):
+    """Save the selected sub-category to a JSON file."""
+    try:
+        with open("selected_sub_category.json", "w", encoding="utf-8") as file:
+            json.dump({"selected_sub_category": sub_category}, file)
+        print(f"Sub-Category '{sub_category}' saved successfully.")  # Debug
+    except Exception as e:
+        print(f"Error saving selected sub-category: {e}")
+
+
 def get_unique_values(data, key):
     """Extract unique values for a specific key from the outfit data."""
     return sorted(set(item[key] for item in data if key in item))
@@ -57,7 +67,9 @@ def create_sub_category_frame(data, root, selected_category):
     sub_categories = get_unique_values(data, "sub_category")
 
     def on_sub_category_selected(sub_category):
+        save_selected_sub_category(sub_category)  # Save the selected sub-category
         print(f"Sub-Category selected: {sub_category}")
+        root.destroy()  # Close the current Tkinter window
 
     for sub_category in sub_categories:
         tk.Button(

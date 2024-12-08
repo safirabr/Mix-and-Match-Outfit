@@ -1,6 +1,5 @@
 import json
 import tkinter as tk
-from PIL import Image, ImageTk
 
 
 def load_outfits_data(filepath):
@@ -79,57 +78,6 @@ def filter_data_by_style(data, style):
     return filtered
 
 
-def display_image_for_sub_style(data, root, sub_style):
-    """Display images based on the selected sub-style."""
-    filtered_data = [item for item in data if item.get("sub_style") == sub_style]
-    if not filtered_data:
-        print(f"No images found for sub-style: {sub_style}")
-        return
-
-    # Load and display the first image for the selected sub-style
-    # Assuming the image path is stored as 'image_path' in the filtered data
-    # Make sure the image path is correctly constructed
-    image_path = filtered_data[0].get("image_path")  # assuming 'image_path' is in the data
-    if not image_path:
-        # If image path is not available, build the path manually
-        image_path = f"images/{sub_style}.jpeg"  # assuming images are stored in the 'images' directory
-
-    if image_path:
-        try:
-            # Open image with PIL and convert to Tkinter-compatible format
-            img = Image.open(image_path)
-            img = img.resize((400, 400))  # Resize image to fit the window (optional)
-            img_tk = ImageTk.PhotoImage(img)
-
-            # Create a frame to display the image
-            frame = tk.Frame(root, bg="#f2f2f2")
-            frame.pack(fill="both", expand=True)
-
-            tk.Label(
-                frame,
-                text=f"Sub-Style: {sub_style}",
-                font=("Arial", 16, "bold"),
-                bg="#f2f2f2",
-                fg="#33b5b5"
-            ).pack(pady=20)
-
-            label = tk.Label(frame, image=img_tk, bg="#f2f2f2")
-            label.image = img_tk  # Keep a reference to the image
-            label.pack(pady=10)
-
-            # Save sub-style selection and exit after displaying the image
-            save_selected_sub_style(sub_style)
-            # root.after(3000, root.quit)  # Wait 3 seconds and then close the window
-
-        except Exception as e:
-            print(f"Error loading image {image_path}: {e}")
-            return
-
-    else:
-        print(f"No image path found for sub-style: {sub_style}")
-
-
-
 def create_sub_style_frame(data, root, selected_category, selected_sub_category, selected_style):
     """Create a frame with sub-style buttons dynamically."""
     frame = tk.Frame(root, bg="#f2f2f2")
@@ -146,8 +94,9 @@ def create_sub_style_frame(data, root, selected_category, selected_sub_category,
     sub_styles = get_unique_values(data, "sub_style")
 
     def on_sub_style_selected(sub_style):
+        save_selected_sub_style(sub_style)  # Save the selected sub-style
         print(f"Sub-Style selected: {sub_style}")
-        display_image_for_sub_style(data, root, sub_style)  # Display image and save sub-style
+        root.destroy()  # Close the Tkinter window after saving the sub-style
 
     for sub_style in sub_styles:
         tk.Button(
@@ -183,6 +132,7 @@ def main():
 
     # Filter data by selected style
     filtered_data = filter_data_by_style(outfits_data, selected_style)
+    print(f"Filtered data: {filtered_data}")  # Debug: periksa hasil filtering
 
     if not filtered_data:
         print(f"No sub-styles found for style: {selected_style}")
@@ -196,11 +146,6 @@ def main():
 
     # Create sub-style frame
     create_sub_style_frame(filtered_data, root, selected_category, selected_sub_category, selected_style)
-    
-    # Add a "Close" button to allow the user to close the window manually
-    close_button = tk.Button(create_sub_style_frame, text="Close", command=root.quit, font=("Arial", 14), bg="#33b5b5", fg="white")
-    close_button.pack(pady=10)
-
 
     # Run the Tkinter main loop
     root.mainloop()

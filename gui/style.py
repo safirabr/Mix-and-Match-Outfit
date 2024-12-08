@@ -40,6 +40,14 @@ def load_selected_sub_category():
         print(f"Error loading selected sub-category: {e}")
         return None
 
+def save_selected_style(style):
+    """Save the selected style to a JSON file."""
+    try:
+        with open("selected_style.json", "w", encoding="utf-8") as file:
+            json.dump({"selected_style": style}, file)
+        print(f"Style '{style}' saved successfully.")  # Debug
+    except Exception as e:
+        print(f"Error saving selected style: {e}")
 
 def get_unique_values(data, key):
     """Extract unique values for a specific key from the outfit data."""
@@ -69,7 +77,9 @@ def create_style_frame(data, root, selected_category, selected_sub_category):
     styles = get_unique_values(data, "style")
 
     def on_style_selected(style):
+        save_selected_style(style)  # Save the selected style
         print(f"Style selected: {style}")
+        root.destroy()  # Close the Tkinter window after saving the style
 
     for style in styles:
         tk.Button(

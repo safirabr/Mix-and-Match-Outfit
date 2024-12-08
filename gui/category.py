@@ -71,8 +71,9 @@ def main():
     # Initialize Tkinter window
     root = tk.Tk()
     root.title("Category Frame")
-    root.geometry("800x600")
+    root.geometry("1700x1100")
     root.config(bg="#f2f2f2")
+    
 
     # Create category frame
     create_category_frame(outfits_data, root)

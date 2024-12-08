@@ -42,3 +42,33 @@ def create_category_radio_buttons(parent, categories, command, variable):
         setattr(radio_button, "radio_category", True)  # Tandai widget
         radio_button.pack()
 
+def create_dynamic_buttons(parent, items, command, columns=3):
+    """
+    Create buttons dynamically for each item in a grid layout.
+    :param parent: The parent widget to attach buttons.
+    :param items: A list of items for which buttons will be created.
+    :param command: The command to execute when a button is clicked. The item will be passed as an argument.
+    :param columns: The number of columns in the grid layout.
+    """
+    for widget in parent.winfo_children():
+        widget.destroy()  # Clear existing widgets
+    
+    row = 0
+    col = 0
+    for item in items:
+        button = tk.Button(
+            parent,
+            text=item,
+            font=("Arial", 12),
+            bg="#33b5b5",
+            fg="white",
+            command=lambda value=item: command(value),
+            width=15,  # Set width for uniform button size
+            height=2   # Set height for uniform button size
+        )
+        button.grid(row=row, column=col, padx=10, pady=10, sticky="ew")
+        col += 1
+        if col >= columns:  # Move to the next row after `columns` buttons
+            col = 0
+            row += 1
+

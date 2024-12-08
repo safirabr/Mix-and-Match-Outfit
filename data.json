@@ -3,7 +3,7 @@
       {
         "category": "trend",
         "sub_category": "korean",
-        "style": "feminim",
+        "style": "kewanitaan",
         "sub_style": "Blouse_Berenda_Rok_A_Line",
         "image": "images/Blouse_Berenda_Rok_A_Line.jpeg"
       },
@@ -66,14 +66,14 @@
       {
         "category": "trend",
         "sub_category": "korean",
-        "style": "santai",
+        "style": "santai elegan",
         "sub_style": "Kaftan_Celana_Panjang",
         "image": "images/Kaftan_Celana_Panjang.jpeg"
       },
       {
         "category": "trend",
         "sub_category": "korean",
-        "style": "street",
+        "style": "street wear",
         "sub_style": "T_shirt_Oversized_Celana_Cargo",
         "image": "images/T_shirt_Oversized_Celana_Cargo.jpeg"
       },
@@ -101,28 +101,28 @@
       {
         "category": "trend",
         "sub_category": "western",
-        "style": "stylish",
+        "style": "swanky",
         "sub_style": "T_shirt_Graphic_Jeans_Straight_Leg",
         "image": "images/T_shirt_Graphic_Jeans_Straight_Leg.jpeg"
       },
       {
         "category": "trend",
         "sub_category": "western",
-        "style": "chic",
+        "style": "elegant",
         "sub_style": "Blazer_Tank_Top_Skirt_Mini",
         "image": "images/Blazer_Tank_Top_Skirt_Mini.jpeg"
       },
       {
         "category": "trend",
         "sub_category": "western",
-        "style": "santai",
+        "style": "chill",
         "sub_style": "Dress_Maxie_Bohemian_Sandal_Gladiator",
         "image": "images/Dress_Maxie_Bohemian_Sandal_Gladiator.jpeg"
       },
       {
         "category": "trend",
         "sub_category": "western",
-        "style": "nyaman",
+        "style": "adem",
         "sub_style": "Sweater_Chunky_Legging",
         "image": "images/Sweater_Chunky_Legging.jpeg"
       },
@@ -192,35 +192,35 @@
       {
         "category": "trend",
         "sub_category": "western",
-        "style": "kasual",
+        "style": "sederhana",
         "sub_style": "Overalls_Denim_T_shirt_Lengan_Pendek",
         "image": "images/Overalls_Denim_T_shirt_Lengan_Pendek.jpeg"
       },
       {
         "category": "preferensi",
         "sub_category": "gelap",
-        "style": "sleek",
+        "style": "dark sleek",
         "sub_style": "Kemeja_Hitam_Celana_Panjang_Hitam",
         "image": "images/Kemeja_Hitam_Celana_Panjang_Hitam.jpeg"
       },
       {
         "category": "preferensi",
         "sub_category": "gelap",
-        "style": "nyaman",
+        "style": "kalem",
         "sub_style": "Sweater_Abu_abu_Tua_Rok_Midi_Hitam",
         "image": "images/Sweater_Abu-abu_Tua_Rok_Midi_Hitam.jpeg"
       },
       {
         "category": "preferensi",
         "sub_category": "gelap",
-        "style": "edgy",
+        "style": "dark edgy",
         "sub_style": "T_shirt_Hitam_Jaket_Kulit_Jeans_Gelap",
         "image": "images/T_shirt_Hitam_Jaket_Kulit_Jeans_Gelap.jpeg"
       },
       {
         "category": "preferensi",
         "sub_category": "gelap",
-        "style": "chic",
+        "style": "good",
         "sub_style": "Dress_Midi_Hitam_Sepatu_Boot_Hitam",
         "image": "images/Dress_Midi_Hitam_Sepatu_Boot_Hitam.jpeg"
       },
@@ -234,7 +234,7 @@
       {
         "category": "preferensi",
         "sub_category": "gelap",
-        "style": "sporty",
+        "style": "sporty dresses",
         "sub_style": "Cardigan_Hitam_Tank_Top_Hitam_Legging_Hitam",
         "image": "images/Cardigan_Hitam_Tank_Top_Hitam_Legging_Hitam.jpeg"
       },
@@ -263,7 +263,7 @@
       {
         "category": "preferensi",
         "sub_category": "terang",
-        "style": "ceria",
+        "style": "pastel ceria",
         "sub_style": "Kaos_Putih_Rok_Paduan_Warna_Pastel",
         "image": "images/Kaos_Putih_Rok_Paduan_Warna_Pastel.jpeg"
       },
@@ -291,7 +291,7 @@
       {
         "category": "preferensi",
         "sub_category": "terang",
-        "style": "sleek",
+        "style": "slick",
         "sub_style": "Kemeja_Hijau_Lime_Rok_Denim",
         "image": "images/Kemeja_Hijau_Lime_Rok_Denim.jpeg"
       },
@@ -305,14 +305,14 @@
       {
         "category": "preferensi",
         "sub_category": "terang",
-        "style": "sporty",
+        "style": "casual dresses",
         "sub_style": "Jumpsuit_Biru_Langit_Sneakers_Putih",
         "image": "images/Jumpsuit_Biru_Langit_Sneakers_Putih.jpeg"
       },
       {
         "category": "preferensi",
         "sub_category": "terang",
-        "style": "bohemian",
+        "style": "hippy",
         "sub_style": "Kimono_Berwarna_Cerah_Tank_Top_Hitam_Jeans",
         "image": "images/Kimono_Berwarna_Cerah_Tank_Top_Hitam_Jeans.jpeg"
       },
@@ -333,7 +333,7 @@
       {
         "category": "warna",
         "sub_category": "merah",
-        "style": "segar",
+        "style": "Bold Contrast",
         "sub_style": "merah_dan_putih",
         "image": "images/merah_dan_putih.jpeg"
       },
@@ -347,21 +347,21 @@
       {
         "category": "warna",
         "sub_category": "merah",
-        "style": "chic",
+        "style": "pretty",
         "sub_style": "merah_dan_navy",
         "image": "images/merah_dan_navy.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "merah",
-        "style": "ceria",
+        "style": "vibrant ceria",
         "sub_style": "merah_dan_kuning",
         "image": "images/merah_dan_kuning.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "merah",
-        "style": "elegan",
+        "style": "fine outfit",
         "sub_style": "merah_dan_emas",
         "image": "images/merah_dan_emas.jpeg"
       },
@@ -382,7 +382,7 @@
       {
         "category": "warna",
         "sub_category": "merah",
-        "style": "berani",
+        "style": "Fiery Elegance",
         "sub_style": "merah_dan_coklat",
         "image": "images/merah_dan_coklat.jpeg"
       },
@@ -396,35 +396,35 @@
       {
         "category": "warna",
         "sub_category": "kuning",
-        "style": "bold",
+        "style": "Edgy Yellow & Black Vibes",
         "sub_style": "kuning_dan_hitam",
         "image": "images/kuning_dan_hitam.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "kuning",
-        "style": "ceria",
+        "style": "sunny elegance",
         "sub_style": "kuning_dan_putih",
         "image": "images/kuning_dan_putih.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "kuning",
-        "style": "modern",
+        "style": "Vibrant Contrast",
         "sub_style": "kuning_dan_abu_abu",
         "image": "images/kuning_dan_abu_abu.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "kuning",
-        "style": "stylish",
+        "style": "supple",
         "sub_style": "kuning_dan_biru_navy",
         "image": "images/kuning_dan_biru_navy.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "kuning",
-        "style": "playful",
+        "style": "Sunny Sweet",
         "sub_style": "kuning_dan_merah_muda",
         "image": "images/kuning_dan_merah_muda.jpeg"
       },
@@ -445,7 +445,7 @@
       {
         "category": "warna",
         "sub_category": "kuning",
-        "style": "vibrant",
+        "style": "Bold Sunset",
         "sub_style": "kuning_dan_orange",
         "image": "images/kuning_dan_orange.jpeg"
       },
@@ -466,7 +466,7 @@
       {
         "category": "warna",
         "sub_category": "hijau",
-        "style": "cerah",
+        "style": "fresh and vibrant",
         "sub_style": "hijau_dan_putih",
         "image": "images/hijau_dan_putih.jpeg"
       },
@@ -480,7 +480,7 @@
       {
         "category": "warna",
         "sub_category": "hijau",
-        "style": "modern",
+        "style": "Calm & Cool",
         "sub_style": "hijau_dan_abu_abu",
         "image": "images/hijau_dan_abu_abu.jpeg"
       },
@@ -494,21 +494,21 @@
       {
         "category": "warna",
         "sub_category": "hijau",
-        "style": "vibrant",
+        "style": "vibrant green & yellow fusion",
         "sub_style": "hijau_dan_kuning",
         "image": "images/hijau_dan_kuning.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "hijau",
-        "style": "fresh",
+        "style": "Bold and Striking Contrast",
         "sub_style": "hijau_dan_merah",
         "image": "images/hijau_dan_merah.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "hijau",
-        "style": "charming",
+        "style": "Tropical Bliss",
         "sub_style": "hijau_dan_pink",
         "image": "images/hijau_dan_pink.jpeg"
       },
@@ -522,7 +522,7 @@
       {
         "category": "warna",
         "sub_category": "hijau",
-        "style": "bold",
+        "style": "Urban Green & Black",
         "sub_style": "hijau_dan_hitam",
         "image": "images/hijau_dan_hitam.jpeg"
       },
@@ -543,14 +543,14 @@
       {
         "category": "warna",
         "sub_category": "biru",
-        "style": "playful",
+        "style": "Playful and Fresh",
         "sub_style": "biru_dan_kuning",
         "image": "images/biru_dan_kuning.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "biru",
-        "style": "modern",
+        "style": "Cool and Contemporary",
         "sub_style": "biru_dan_abu_abu",
         "image": "images/biru_dan_abu_abu.jpeg"
       },
@@ -564,14 +564,14 @@
       {
         "category": "warna",
         "sub_category": "biru",
-        "style": "hangat",
+        "style": "Soft Blue Elegance",
         "sub_style": "biru_dan_coklat",
         "image": "images/biru_dan_coklat.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "biru",
-        "style": "cerah",
+        "style": "bold and balanced",
         "sub_style": "biru_dan_hijau",
         "image": "images/biru_dan_hijau.jpeg"
       },
@@ -585,7 +585,7 @@
       {
         "category": "warna",
         "sub_category": "biru",
-        "style": "fresh",
+        "style": "Fresh and Fun",
         "sub_style": "biru_dan_orange",
         "image": "images/biru_dan_orange.jpeg"
       },
@@ -599,7 +599,7 @@
       {
         "category": "warna",
         "sub_category": "biru",
-        "style": "elegan",
+        "style": "nice outfit",
         "sub_style": "hitam_dan_putih",
         "image": "images/hitam_dan_putih.jpeg"
       },
@@ -613,7 +613,7 @@
       {
         "category": "warna",
         "sub_category": "hitam",
-        "style": "sleek",
+        "style": "sleek french",
         "sub_style": "hitam_dan_abu_abu",
         "image": "images/hitam_dan_abu_abu.jpeg"
       },
@@ -627,7 +627,7 @@
       {
         "category": "warna",
         "sub_category": "hitam",
-        "style": "stylish",
+        "style": "stylized",
         "sub_style": "hitam_dan_biru_navy",
         "image": "images/hitam_dan_biru_navy.jpeg"
       },
@@ -641,14 +641,14 @@
       {
         "category": "warna",
         "sub_category": "hitam",
-        "style": "chic",
+        "style": "berkualitas",
         "sub_style": "hitam_dan_coklat",
         "image": "images/hitam_dan_coklat.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "hitam",
-        "style": "vibrant",
+        "style": "Edgy Vibrance",
         "sub_style": "hitam_dan_oranye",
         "image": "images/hitam_dan_oranye.jpeg"
       },
@@ -669,14 +669,14 @@
       {
         "category": "warna",
         "sub_category": "putih",
-        "style": "chic",
+        "style": "fair",
         "sub_style": "putih_dan_hitam",
         "image": "images/putih_dan_hitam.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "putih",
-        "style": "ceria",
+        "style": "segar ceria",
         "sub_style": "putih_dan_biru",
         "image": "images/putih_dan_biru.jpeg"
       },
@@ -690,35 +690,35 @@
       {
         "category": "warna",
         "sub_category": "putih",
-        "style": "berani",
+        "style": "bold & bright",
         "sub_style": "putih_dan_merah",
         "image": "images/putih_dan_merah.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "putih",
-        "style": "modern",
+        "style": "Monochrome",
         "sub_style": "putih_dan_abu_abu",
         "image": "images/putih_dan_abu_abu.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "putih",
-        "style": "fresh",
+        "style": "Fresh and Crisp",
         "sub_style": "putih_dan_hijau",
         "image": "images/putih_dan_hijau.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "putih",
-        "style": "elegan",
+        "style": "expensive outfit",
         "sub_style": "putih_dan_emas",
         "image": "images/putih_dan_emas.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "putih",
-        "style": "soft",
+        "style": "Soft harmony",
         "sub_style": "putih_dan_pink",
         "image": "images/putih_dan_pink.jpeg"
       },
@@ -732,7 +732,7 @@
       {
         "category": "warna",
         "sub_category": "putih",
-        "style": "romantis",
+        "style": "royal pure",
         "sub_style": "putih_dan_ungu",
         "image": "images/putih_dan_ungu.jpeg"
       },
@@ -746,28 +746,28 @@
       {
         "category": "warna",
         "sub_category": "abu-abu",
-        "style": "elegan",
+        "style": "elegant comfort",
         "sub_style": "abu_abu_dan_putih",
         "image": "images/abu_abu_dan_putih.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "abu-abu",
-        "style": "berani",
+        "style": "Bold Contrast Look",
         "sub_style": "abu_abu_dan_merah",
         "image": "images/abu_abu_dan_merah.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "abu-abu",
-        "style": "stylish",
+        "style": "bergaya",
         "sub_style": "abu_abu_dan_biru",
         "image": "images/abu_abu_dan_biru.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "abu-abu",
-        "style": "playful",
+        "style": "Playful Elegance",
         "sub_style": "abu_abu_dan_kuning",
         "image": "images/abu_abu_dan_kuning.jpeg"
       },
@@ -781,112 +781,105 @@
       {
         "category": "warna",
         "sub_category": "abu-abu",
-        "style": "chic",
+        "style": "cute",
         "sub_style": "abu_abu_dan_pink",
         "image": "images/abu_abu_dan_pink.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "abu-abu",
-        "style": "earthy",
+        "style": "Earthy sophistication",
         "sub_style": "abu_abu_dan_coklat",
         "image": "images/abu_abu_dan_coklat.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "abu-abu",
-        "style": "cool",
+        "style": "Cool Meets Warm",
         "sub_style": "abu_abu_dan_oranye",
         "image": "images/abu_abu_dan_oranye.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "abu-abu",
-        "style": "fresh",
+        "style": "Understated luxury",
         "sub_style": "abu_abu_dan_emas",
         "image": "images/abu_abu_dan_emas.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "ungu",
-        "style": "glamour",
+        "style": "Regal Glamour",
         "sub_style": "ungu_dan_emas",
         "image": "images/ungu_dan_emas.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "ungu",
-        "style": "elegan",
+        "style": "posh",
         "sub_style": "ungu_dan_putih",
         "image": "images/ungu_dan_putih.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "ungu",
-        "style": "modern",
+        "style": "Sophisticated Contrast",
         "sub_style": "ungu_dan_abu_abu",
         "image": "images/ungu_dan_abu_abu.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "ungu",
-        "style": "playful",
+        "style": "Lavender Dreams",
         "sub_style": "ungu_dan_merah_muda",
         "image": "images/ungu_dan_merah_muda.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "ungu",
-        "style": "segar",
+        "style": "bold & vibrant",
         "sub_style": "ungu_dan_hijau",
         "image": "images/ungu_dan_hijau.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "ungu",
-        "style": "vibrant",
+        "style": "Playful Sophistication",
         "sub_style": "ungu_dan_biru",
         "image": "images/ungu_dan_biru.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "ungu",
-        "style": "mewah",
+        "style": "Royal Dark",
         "sub_style": "ungu_dan_hitam",
         "image": "images/ungu_dan_hitam.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "ungu",
-        "style": "romantis",
+        "style": "playful romantis",
         "sub_style": "ungu_dan_pink",
         "image": "images/ungu_dan_pink.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "ungu",
-        "style": "misterius",
+        "style": "Mysterious Elegance",
         "sub_style": "ungu_dan_coklat",
         "image": "images/ungu_dan_coklat.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "ungu",
-        "style": "misterius",
-        "sub_style": "ungu_dan_coklat",
-        "image": "images/ungu_dan_coklat.jpeg"
-      },
-      {
-        "category": "warna",
-        "sub_category": "ungu",
-        "style": "fresh",
+        "style": "Sunny Mystique",
         "sub_style": "ungu_dan_kuning",
         "image": "images/ungu_dan_kuning.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "coklat",
-        "style": "klasik",
+        "style": "classic neutral elegance",
         "sub_style": "coklat_dan_putih",
         "image": "images/coklat_dan_putih.jpeg"
       },
@@ -907,119 +900,119 @@
       {
         "category": "warna",
         "sub_category": "coklat",
-        "style": "natural",
+        "style": "Earthy and natural",
         "sub_style": "coklat_dan_hijau",
         "image": "images/coklat_dan_hijau.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "coklat",
-        "style": "berani",
+        "style": "Warm Contrast",
         "sub_style": "coklat_dan_merah",
         "image": "images/coklat_dan_merah.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "coklat",
-        "style": "vibrant",
+        "style": "Warm & Energizing",
         "sub_style": "coklat_dan_oranye",
         "image": "images/coklat_dan_oranye.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "coklat",
-        "style": "soft",
+        "style": "Subtle chic",
         "sub_style": "coklat_dan_pink",
         "image": "images/coklat_dan_pink.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "coklat",
-        "style": "charming",
+        "style": "Warm & Regal",
         "sub_style": "coklat_dan_ungu",
         "image": "images/coklat_dan_ungu.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "coklat",
-        "style": "modern",
+        "style": "modern earthy",
         "sub_style": "coklat_dan_abu_abu",
         "image": "images/coklat_dan_abu_abu.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "coklat",
-        "style": "elegan",
+        "style": "vibrant elegan",
         "sub_style": "coklat_dan_emas",
         "image": "images/coklat_dan_emas.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "oranye",
-        "style": "ceria",
+        "style": "tropical ceria",
         "sub_style": "oranye_dan_putih",
         "image": "images/oranye_dan_putih.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "oranye",
-        "style": "bold",
+        "style": "Sizzling Energy",
         "sub_style": "oranye_dan_hitam",
         "image": "images/oranye_dan_hitam.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "oranye",
-        "style": "modern",
+        "style": "urban cool",
         "sub_style": "oranye_dan_abu_abu",
         "image": "images/oranye_dan_abu_abu.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "oranye",
-        "style": "energik",
+        "style": "Playful and Bold",
         "sub_style": "oranye_dan_biru",
         "image": "images/oranye_dan_biru.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "oranye",
-        "style": "earthy",
+        "style": "Warm earthy tones",
         "sub_style": "oranye_dan_coklat",
         "image": "images/oranye_dan_coklat.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "oranye",
-        "style": "vibrant",
+        "style": "playful vibrant",
         "sub_style": "oranye_dan_hijau",
         "image": "images/oranye_dan_hijau.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "oranye",
-        "style": "fresh",
+        "style": "Energetic sunshine",
         "sub_style": "oranye_dan_kuning",
         "image": "images/oranye_dan_kuning.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "oranye",
-        "style": "playful",
+        "style": "Bold and Playful",
         "sub_style": "oranye_dan_pink",
         "image": "images/oranye_dan_pink.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "oranye",
-        "style": "charming",
+        "style": "Vibrant heat",
         "sub_style": "oranye_dan_merah",
         "image": "images/oranye_dan_merah.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "oranye",
-        "style": "cool",
+        "style": "Electric Fusion",
         "sub_style": "oranye_dan_ungu",
         "image": "images/oranye_dan_ungu.jpeg"
       },
@@ -1033,91 +1026,91 @@
       {
         "category": "warna",
         "sub_category": "pink",
-        "style": "playful",
+        "style": "Soft Elegance",
         "sub_style": "pink_dan_abu_abu",
         "image": "images/pink_dan_abu_abu.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "pink",
-        "style": "chic",
+        "style": "elok",
         "sub_style": "pink_dan_hitam",
         "image": "images/pink_dan_hitam.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "pink",
-        "style": "energik",
+        "style": "Cheerful",
         "sub_style": "pink_dan_kuning",
         "image": "images/pink_dan_kuning.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "pink",
-        "style": "modern",
+        "style": "Playful Pastels",
         "sub_style": "pink_dan_biru",
         "image": "images/pink_dan_biru.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "pink",
-        "style": "soft",
+        "style": "Chic Softness",
         "sub_style": "pink_dan_coklat",
         "image": "images/pink_dan_coklat.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "pink",
-        "style": "romantis",
+        "style": "romance",
         "sub_style": "pink_dan_merah",
         "image": "images/pink_dan_merah.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "pink",
-        "style": "vibrant",
+        "style": "Modern Retro",
         "sub_style": "pink_dan_hijau",
         "image": "images/pink_dan_hijau.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "pink",
-        "style": "elegan",
+        "style": "plush",
         "sub_style": "pink_dan_emas",
         "image": "images/pink_dan_emas.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "pink",
-        "style": "segar",
+        "style": "modern colour clash",
         "sub_style": "pink_dan_oranye",
         "image": "images/pink_dan_oranye.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "biru_muda",
-        "style": "feminim",
+        "style": "light dan airy",
         "sub_style": "biru_muda_dan_putih",
         "image": "images/biru_muda_dan_putih.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "biru_muda",
-        "style": "energik",
+        "style": "Soft Serenity",
         "sub_style": "biru_muda_dan_abu_abu",
         "image": "images/biru_muda_dan_abu_abu.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "biru_muda",
-        "style": "modern",
+        "style": "Sunny Sky Vibes",
         "sub_style": "biru_muda_dan_kuning",
         "image": "images/biru_muda_dan_kuning.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "biru_muda",
-        "style": "earthy",
+        "style": "Sweet Serenity",
         "sub_style": "biru_muda_dan_merah_muda",
         "image": "images/biru_muda_dan_merah_muda.jpeg"
       },
@@ -1131,105 +1124,105 @@
       {
         "category": "warna",
         "sub_category": "biru_muda",
-        "style": "fresh",
+        "style": "Soft Oasis",
         "sub_style": "biru_muda_dan_hijau",
         "image": "images/biru_muda_dan_hijau.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "biru_muda",
-        "style": "playful",
+        "style": "Playful and Radiant",
         "sub_style": "biru_muda_dan_lemon",
         "image": "images/biru_muda_dan_lemon.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "biru_muda",
-        "style": "soft",
+        "style": "Soft pastel harmony",
         "sub_style": "biru_muda_dan_pink",
         "image": "images/biru_muda_dan_pink.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "biru_muda",
-        "style": "romantis",
+        "style": "Fresh Energetic",
         "sub_style": "biru_muda_dan_oranye",
         "image": "images/biru_muda_dan_oranye.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "biru_muda",
-        "style": "vibrant",
+        "style": "Calming and Bold",
         "sub_style": "biru_muda_dan_ungu",
         "image": "images/biru_muda_dan_ungu.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "hijau_tua",
-        "style": "segar",
+        "style": "formal look",
         "sub_style": "hijau_tua_dan_putih",
         "image": "images/hijau_tua_dan_putih.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "hijau_tua",
-        "style": "earthy",
+        "style": "earthy elegance",
         "sub_style": "hijau_tua_dan_coklat",
         "image": "images/hijau_tua_dan_coklat.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "hijau_tua",
-        "style": "stylish",
+        "style": "jaunty",
         "sub_style": "hijau_tua_dan_abu_abu",
         "image": "images/hijau_tua_dan_abu_abu.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "hijau_tua",
-        "style": "energik",
+        "style": "Vibrant Forest Glow",
         "sub_style": "hijau_tua_dan_kuning",
         "image": "images/hijau_tua_dan_kuning.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "hijau_tua",
-        "style": "chic",
+        "style": "attractive",
         "sub_style": "hijau_tua_dan_biru_navy",
         "image": "images/hijau_tua_dan_biru_navy.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "hijau_tua",
-        "style": "cool",
+        "style": "Earthy Warmth with a Bold Twist",
         "sub_style": "hijau_tua_dan_merah",
         "image": "images/hijau_tua_dan_merah.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "hijau_tua",
-        "style": "fresh",
+        "style": "Nature Meets Playfulness",
         "sub_style": "hijau_tua_dan_pink",
         "image": "images/hijau_tua_dan_pink.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "hijau_tua",
-        "style": "romantis",
+        "style": "Regal Harmony",
         "sub_style": "hijau_tua_dan_kuning_gold",
         "image": "images/hijau_tua_dan_kuning_gold.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "hijau_tua",
-        "style": "vibrant",
+        "style": "Regal Green & Purple",
         "sub_style": "hijau_tua_dan_ungu",
         "image": "images/hijau_tua_dan_ungu.jpeg"
       },
       {
         "category": "warna",
         "sub_category": "hijau_tua",
-        "style": "playful",
+        "style": "Warm and Deep Contrast",
         "sub_style": "hijau_tua_dan_orange",
         "image": "images/hijau_tua_dan_orange.jpeg"
       }

@@ -74,6 +74,10 @@ o   pilihan kategori: ditentukan warna yang anda pilih
 ## FLOWCHART
 ![flowchart drawio (1)](https://github.com/user-attachments/assets/108e29c7-2ad0-412e-91bf-9134109f5ea4)
 
+## SIDE MAP
+![SIDEMAP](https://github.com/user-attachments/assets/fffc0a22-3899-4a8c-9491-e455cacaa944)
+
+
 
 ## Keterangan
 Berdasarkan input yang dipilih, program akan menampilkan rekomendasi outfit yang sesuai dengan gaya, preferensi, dan warna yang telah dipilih.

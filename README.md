@@ -1,6 +1,7 @@
 ## Kelas        : C
 ## Kelompok     : 12
 ## Anggota      :
+
 - I0324096      Nu'aim Alfaruqyannaf        (Nuaim23)
 - I0324100      Safira Budi Ramadhani       (safirabr)
 - I0324106      Lintang Nibras Puspita Ayu  (Ayulintang16) 
@@ -13,25 +14,35 @@ Program ini memberikan rekomendasi outfit berdasarkan tiga kategori:
 
 1. Tren (Korean/Western)
    
+   
 o   pilihan sub kategori          : western atau Korean.
 
+
 o   pilihan style untuk Korean    : Feminin, manis, kasual, chic, nyaman, stylish, bohemian, trendy, santai, street, siluet, smart, sporty.
+
 
 o   pilihan style untuk western   : Stylish, chic, santai, nyaman, street, acara, elegan, youthful, layered, rapi, winter, edgy, classy, kasual.
 
 
+
 2. Preferensi (Gelap/Terang)
+   
    
 o   pilihan sub kategori          : gelap atau terang.
 
+
 o   pilihan style untuk terang    : Ceria, segar, cerah, lembut, sleek, cozy, sporty, bohemian, berani, santai.
+
 
 o   pilihan style untuk gelap     : Sleek, cozy, edgy, chic, santai, sporty, formal, profesional, hangat.
 
 
+
 3. Warna
    
+   
 o   pilihan sub kategori        : merah, kuning, hijau, biru, hitam, putih, abu-abu, ungu, coklat, oranye, pink, biru muda, atau hijau tua
+
 
 o   pilihan style               : ditentukan masing-masing warna yang anda pilih
 
@@ -51,6 +62,7 @@ o   pilihan style               : ditentukan masing-masing warna yang anda pilih
 - Program akan meminta pengguna untuk memilih salah satu pilihan kategori, sub kategori, dan style.
 - Jika input terpilih akan mendapat pilihan berikut;
   
+  
 1. Pilihan Berdasarkan Kategori Tren:
     Pengguna memilih antara Sub Kategori Korean atau Western.
    
@@ -58,6 +70,7 @@ o   pilihan style               : ditentukan masing-masing warna yang anda pilih
         Jika memilih Western, pengguna memilih gaya atau style yang sesuai, misalnya: Stylish, Chic, Santai, dan lainnya.
    
     Rekomendasi berupa ilustrasi gambar akan diberikan setelah gaya dipilih
+   
 
 2. Pilihan Berdasarkan Kategori Preferensi (Gelap/Terang):
     Pengguna memilih antara Sub Kategori Gelap atau Terang.
@@ -66,6 +79,7 @@ o   pilihan style               : ditentukan masing-masing warna yang anda pilih
         Jika memilih Terang, pengguna dapat memilih gaya atau style seperti Ceria, Segar, Cerah, dan lainnya.
    
     Rekomendasi berupa ilustrasi gambar akan diberikan setelah gaya dipilih
+   
 
 3. Pilihan Berdasarkan Kategori Warna:
    Pengguna memilih Sub Kategori warna outfit, seperti Merah, Kuning, Hijau, dan lainnya.
@@ -76,8 +90,10 @@ o   pilihan style               : ditentukan masing-masing warna yang anda pilih
 
    
 - Setelah rekomendasi ditampilkan, program akan selesai dan kembali ke menu awal atau keluar.
+- Masing masing Face memiliki Button untuk Exit jika dirasa pengguna tidak sesuai
 
 ## FLOWCHART
+
 
 ## SIDE MAP
 

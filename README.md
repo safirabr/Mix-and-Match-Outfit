@@ -48,30 +48,29 @@ o   pilihan style               : ditentukan masing-masing warna yang anda pilih
   
     Pilihan 3: Pilih Berdasarkan Warna
   
-- Program akan meminta pengguna untuk memilih salah satu pilihan.
+- Program akan meminta pengguna untuk memilih salah satu pilihan kategori, sub kategori, dan style.
 - Jika input terpilih akan mendapat pilihan berikut;
   
-1. Pilihan Berdasarkan Tren:
-    Pengguna memilih antara Korean atau Western.
+1. Pilihan Berdasarkan Kategori Tren:
+    Pengguna memilih antara Sub Kategori Korean atau Western.
    
-        Jika memilih Korean, pengguna memilih gaya yang sesuai dengan preferensi mereka, misalnya: Feminin, Manis, Kasual, dan lainnya.
-        Jika memilih Western, pengguna memilih gaya yang sesuai, misalnya: Stylish, Chic, Santai, dan lainnya.
-   
-    Rekomendasi berupa ilustrasi gambar akan diberikan setelah gaya dipilih
-
-2. Pilihan Berdasarkan Preferensi (Gelap/Terang):
-    Pengguna memilih antara Gelap atau Terang.
-   
-        Jika memilih Gelap, pengguna dapat memilih kategori seperti Sleek, Cozy, Edgy, dan lainnya.
-        Jika memilih Terang, pengguna dapat memilih kategori seperti Ceria, Segar, Cerah, dan lainnya.
+        Jika memilih Korean, pengguna memilih gaya atau style yang sesuai dengan preferensi mereka, misalnya: Feminin, Manis, Kasual, dan lainnya.
+        Jika memilih Western, pengguna memilih gaya atau style yang sesuai, misalnya: Stylish, Chic, Santai, dan lainnya.
    
     Rekomendasi berupa ilustrasi gambar akan diberikan setelah gaya dipilih
 
-3. Pilihan Berdasarkan Warna:
+2. Pilihan Berdasarkan Kategori Preferensi (Gelap/Terang):
+    Pengguna memilih antara Sub Kategori Gelap atau Terang.
    
-    Pengguna memilih warna outfit, seperti Merah, Kuning, Hijau, dan lainnya.
+        Jika memilih Gelap, pengguna dapat memilih gaya atau style seperti Sleek, Cozy, Edgy, dan lainnya.
+        Jika memilih Terang, pengguna dapat memilih gaya atau style seperti Ceria, Segar, Cerah, dan lainnya.
    
-    Setelah memilih warna, pengguna memilih kategori seperti Bold, Ceria, Modern, dan lainnya.
+    Rekomendasi berupa ilustrasi gambar akan diberikan setelah gaya dipilih
+
+3. Pilihan Berdasarkan Kategori Warna:
+   Pengguna memilih Sub Kategori warna outfit, seperti Merah, Kuning, Hijau, dan lainnya.
+
+         Setelah memilih Sub Kategori warna, pengguna memilih gaya atau style seperti Bold, Ceria, Modern, dan lainnya.
    
     Rekomendasi berupa ilustrasi gambar akan diberikan setelah gaya dipilih.
 
@@ -86,6 +85,6 @@ o   pilihan style               : ditentukan masing-masing warna yang anda pilih
 
 
 ## Keterangan
-Berdasarkan input yang dipilih, program akan menampilkan rekomendasi outfit yang sesuai dengan gaya, preferensi, dan warna yang telah dipilih.
+Berdasarkan input yang dipilih, program akan menampilkan rekomendasi outfit yang sesuai dengan trend, preferensi, dan warna yang telah dipilih berdasarkan kategori, sub kategori, dan gaya atau style nya.
 
 Akhir Program

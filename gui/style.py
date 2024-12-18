@@ -1,5 +1,6 @@
 import json
 import tkinter as tk
+from tkinter import messagebox
 from PIL import Image, ImageTk
 
 
@@ -51,6 +52,12 @@ def save_selected_style(style):
     except Exception as e:
         print(f"Error saving selected style: {e}")
 
+def on_exit(root):
+    """Handle application exit with confirmation dialog."""
+    confirm = messagebox.askyesno("Exit Confirmation", "Are you sure you want to exit the application?")
+    if confirm:
+        root.quit()  # Close the application
+
 def get_unique_values(data, key):
     """Extract unique values for a specific key from the outfit data."""
     return sorted(set(item[key] for item in data if key in item))
@@ -83,13 +90,8 @@ def create_style_frame(data, root, selected_category, selected_sub_category):
     except Exception as e:
         print(f"Error loading image: {e}")
 
-    # Create header label
-    canvas.create_text(
-        400, 50,
-        text=f"Category: {selected_category} | Sub-Category: {selected_sub_category}",
-        font=("Arial", 16, "bold"),
-        fill="#C6C09C"
-    )
+    
+    
 
     # Get unique styles
     styles = get_unique_values(data, "style")
@@ -105,26 +107,27 @@ def create_style_frame(data, root, selected_category, selected_sub_category):
         btn = tk.Button(
             frame,
             text=style,
-            font=("Arial", 14),
+            font=("Arial", 10),
             bg="#C6C09C",
             fg="white",
             command=lambda st=style: on_style_selected(st)
         )
-        canvas.create_window(400, 100 + idx * 50, window=btn)  # Position the button dynamically
+        canvas.create_window(600, 160 + idx * 40, window=btn)  # Position the button dynamically
 
     # Create the "Exit Aplikasi" button
     def exit_application():
         root.quit()  # Close the Tkinter window
 
-    exit_button = tk.Button(
-        frame,
-        text="Exit Aplikasi",
-        font=("Arial", 14),
-        bg="#ff6666",
-        fg="white",
-        command=exit_application
-    )
-    canvas.create_window(400, 100 + len(styles) * 50 + 20, window=exit_button)  # Position the exit button
+    exit_btn = tk.Button(
+    frame,
+    text="Exit Aplikasi",
+    font=("Arial", 14),
+    bg="#ff6666",
+    fg="white",
+    command=lambda: on_exit(root)
+)
+
+    canvas.create_window(600, 120, window=exit_btn)  # Position the exit button
 
     return frame
 
@@ -157,7 +160,7 @@ def main():
     # Initialize Tkinter window
     root = tk.Tk()
     root.title("Style Frame")
-    root.geometry("800x600")
+    root.geometry("1920x1080")
     root.config(bg="#CCC0A9")
 
     # Create style frame

@@ -1,24 +1,21 @@
-my_outfit_advisor/
+My Outfit Advisor/
 ├── images/               # Folder untuk gambar pakaian
 │   ├── outfit1.jpg       # Contoh gambar pakaian
 │   └── outfit2.jpg       # Contoh gambar pakaian
-├── assets/               # Folder untuk aset lainnya (misalnya logo)
-│   └── logo.png          # Contoh logo aplikasi
-├── data.json             # File JSON yang menyimpan data outfit
-├── app.py                # Skrip utama untuk menjalankan aplikasi
 ├── gui/                  # Paket untuk GUI
 │   ├── __init__.py       # Menandakan ini adalah paket
-│   ├── window.py         # Modul untuk membuat window utama dan layout
-│   ├── widgets.py        # Modul untuk widget-widget umum (tombol, radio button, dll.)
-│   └── image.py          # Modul untuk menangani gambar
-├── data/                 # Paket untuk memuat dan mengelola data
-│   ├── __init__.py
-│   ├── data_loader.py    # Modul untuk memuat data JSON
-│   └── outfits.py        # Modul untuk menangani data outfit
-├── user_data/            # Paket untuk mengelola riwayat pilihan pengguna
-│   ├── __init__.py       # Menandakan ini adalah paket
-│   ├── user_data_manager.py # Modul untuk mengelola SQLite (user_data.db)
-│   ├── user_data_json.py   # Modul untuk mengelola JSON (user_data.json)
-│   └── user_data.db      # File SQLite untuk menyimpan riwayat pilihan pengguna
+│   ├── image.py          
+│   ├── category.py  
+│   ├── sub_category.py  
+│   ├── style.py  
+│   └── sub_style.py          
+├── __init__.py       # Menandakan ini adalah paket
+├── data.json  
+├── main.py 
+├── selected_category.json  
+├── selected_sub_category.json    
+├── selected_style.json    
+├── selected_sub_style.json            
 ├── requirements.txt      # File dependensi
 └── README.md             # Dokumentasi aplikasi
+└── struktur folder

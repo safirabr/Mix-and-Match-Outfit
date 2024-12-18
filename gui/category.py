@@ -1,7 +1,7 @@
 import tkinter as tk
+from tkinter import messagebox
 import json
 from PIL import Image, ImageTk
-
 
 def load_outfits_data(filepath):
     """Load outfit data from a JSON file."""
@@ -29,6 +29,11 @@ def save_selected_category(category):
     except Exception as e:
         print(f"Error saving selected category: {e}")
 
+def on_exit(root):
+    """Handle application exit with confirmation dialog."""
+    confirm = messagebox.askyesno("Exit Confirmation", "Are you sure you want to exit the application?")
+    if confirm:
+        root.quit()  # Close the application
 
 def create_category_frame(data, root):
     """Create a frame with category buttons dynamically and use an image as the background."""
@@ -68,15 +73,15 @@ def create_category_frame(data, root):
             fg="white",
             command=lambda cat=category: on_category_selected(cat)
         )
-        canvas.create_window(600, 100 + categories.index(category) * 60, window=btn)  # Position the button
+        canvas.create_window(600, 150 + categories.index(category) * 60, window=btn)  # Position the button
 
-    # Exit Button
+    # Exit Button with Confirmation
     exit_btn = tk.Button(
         frame,
         text="Exit Aplikasi",
         font=("Arial", 14),
         bg="#ff6666",
         fg="white",
-        command=root.quit
+        command=lambda: on_exit(root)  # Call the on_exit function for confirmation
     )
-    canvas.create_window(600, 500, window=exit_btn)  # Place the Exit button in the canvas
+    canvas.create_window(600, 350, window=exit_btn)  # Place the Exit button in the canvas

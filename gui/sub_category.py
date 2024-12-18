@@ -1,5 +1,6 @@
 import json
 import tkinter as tk
+from tkinter import messagebox
 from gui.category import create_category_frame, load_outfits_data
 
 
@@ -38,6 +39,12 @@ def save_selected_sub_category(sub_category):
         print(f"Sub-Category '{sub_category}' saved successfully.")  # Debug
     except Exception as e:
         print(f"Error saving selected sub-category: {e}")
+
+def on_exit(root):
+    """Handle application exit with confirmation dialog."""
+    confirm = messagebox.askyesno("Exit Confirmation", "Are you sure you want to exit the application?")
+    if confirm:
+        root.quit()  # Close the application
 
 def get_unique_values(data, key):
     """Extract unique values for a specific key from the outfit data."""
@@ -95,40 +102,28 @@ def create_sub_category_frame(data, root, selected_category):
         btn = tk.Button(
             frame,
             text=sub_category,
-            font=("Arial", 14),
+            font=("Arial", 12),
             bg="#C6C09C",
             fg="white",
             command=lambda sub=sub_category: on_sub_category_selected(sub)
         )
-        canvas.create_window(600, 100 + sub_categories.index(sub_category) * 60, window=btn)  # Position the button
+        canvas.create_window(600, 160 + sub_categories.index(sub_category) * 40, window=btn)  # Position the button
 
-    # Back button to return to Category window
-    def go_back():
-        frame.destroy()  # Destroy the current frame
-        create_category_frame(data, root)  # Recreate the category frame with all categories
-
-    back_button = tk.Button(
-        frame,
-        text="Back to Category",
-        font=("Arial", 14),
-        bg="#ffcc66",
-        fg="white",
-        command=go_back  # Navigate back to the category frame
-    )
-    canvas.create_window(600, 400, window=back_button)  # Place the back button
+   
 
     # Exit button
     def exit_application():
         root.quit()  # Close the Tkinter window
 
-    exit_button = tk.Button(
-        frame,
-        text="Exit Aplikasi",
-        font=("Arial", 14),
-        bg="#ff6666",
-        fg="white",
-        command=exit_application
-    )
-    canvas.create_window(600, 500, window=exit_button)  # Place the Exit button
+    exit_btn = tk.Button(
+    frame,
+    text="Exit Aplikasi",
+    font=("Arial", 14),
+    bg="#ff6666",
+    fg="white",
+    command=lambda: on_exit(root)
+)
+    
+    canvas.create_window(600, 120, window=exit_btn)  # Place the Exit button
 
     return frame

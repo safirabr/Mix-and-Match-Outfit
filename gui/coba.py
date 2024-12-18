@@ -28,7 +28,7 @@ def main():
         print("Error: No outfit data loaded.")
         return
 
-    # Step 1: Select Category
+     # Step 1: Select Category
     selected_category = load_selected_category()
     if not selected_category:
         root = tk.Tk()
@@ -36,9 +36,9 @@ def main():
         root.geometry("1700x1100")
         root.config(bg="#CCC0A9")
         create_category_frame(outfits_data, root)
-        root.mainloop()
-        # root.dei
-        selected_category = load_selected_category()
+        root.mainloop()  # Wait for user interaction
+        selected_category = load_selected_category()  # Reload the selected category after window is closed
+
     if not selected_category:
         print("Error: No category selected. Exiting.")
         return
@@ -49,7 +49,7 @@ def main():
     if not selected_sub_category:
         root = tk.Tk()
         root.title("Select Sub-Category")
-        root.geometry("800x600")
+        root.geometry("1700x1100")
         root.config(bg="#CCC0A9")
         create_sub_category_frame(filtered_by_category, root, selected_category)
         root.mainloop()
@@ -64,7 +64,7 @@ def main():
     if not selected_style:
         root = tk.Tk()
         root.title("Select Style")
-        root.geometry("800x600")
+        root.geometry("1700x1100")
         root.config(bg="#CCC0A9")
         create_style_frame(filtered_by_sub_category, root, selected_category, selected_sub_category)
         root.mainloop()
@@ -80,7 +80,7 @@ def main():
         return
     root = tk.Tk()
     root.title("Select Sub-Style")
-    root.geometry("800x600")
+    root.geometry("1700x1100")
     root.config(bg="#CCC0A9")
     create_sub_style_frame(filtered_by_style, root, selected_category, selected_sub_category, selected_style)
     root.mainloop()
@@ -127,7 +127,7 @@ def create_category_frame(data, root):
     """Create a frame with category buttons dynamically."""
     frame = tk.Frame(root, bg="#CCC0A9")
     frame.pack(fill="both", expand=True)
-
+    
     tk.Label(frame, text="Select a Category", font=("Arial", 16, "bold"), bg="#CCC0A9", fg="#C6C09C").pack(pady=20, anchor="center")
 
     categories = get_unique_values(data, "category")

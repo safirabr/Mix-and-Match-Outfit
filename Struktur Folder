@@ -1,21 +1,20 @@
 My Outfit Advisor/
-├── images/               # Folder untuk gambar pakaian
-│   ├── outfit1.jpg       # Contoh gambar pakaian
-│   └── outfit2.jpg       # Contoh gambar pakaian
-├── gui/                  # Paket untuk GUI
-│   ├── __init__.py       # Menandakan ini adalah paket
-│   ├── image.py          
-│   ├── category.py  
-│   ├── sub_category.py  
-│   ├── style.py  
-│   └── sub_style.py          
-├── __init__.py       # Menandakan ini adalah paket
-├── data.json  
-├── main.py 
-├── selected_category.json  
-├── selected_sub_category.json    
-├── selected_style.json    
-├── selected_sub_style.json            
-├── requirements.txt      # File dependensi
-└── README.md             # Dokumentasi aplikasi
-└── struktur folder
+├── images/               # Folder ini menyimpan gambar-gambar ilustrasi outfit
+│   ├── outfit1.jpg       # Contoh file Gambar ilustrasi pertama untuk outfit
+│   └── background1.jpg   # Contoh file background canvas face pertama untuk outfit
+├── gui/                  # Paket yang berisi file terkait antarmuka pengguna (GUI)
+│   ├── __init__.py       # Menandakan bahwa folder ini adalah paket Python
+│   ├── image.py          # Mengelola dan menampilkan gambar outfit dalam GUI
+│   ├── category.py       # Menangani kategori outfit
+│   ├── sub_category.py   # Menangani subkategori outfit 
+│   ├── style.py          # Menangani style
+│   └── sub_style.py      # Menangani substyle untuk output ilustrasi
+├── __init__.py           # Menandakan bahwa folder utama ini adalah paket Python
+├── data.json             # File data utama yang berisi data tentang kategori, subkategori, style, ilustrasi substyle
+├── main.py               # File utama untuk menjalankan aplikasi
+├── selected_category.json      # Menyimpan kategori outfit yang dipilih oleh pengguna
+├── selected_sub_category.json  # Menyimpan subkategori outfit yang dipilih oleh pengguna
+├── selected_style.json         # Menyimpan style outfit yang dipilih oleh pengguna
+├── selected_sub_style.json     # Menyimpan substyle ilustrasi outfit yang dipilih oleh pengguna
+├── requirements.txt            # Daftar dependensi atau pustaka yang dibutuhkan oleh aplikasi
+└── README.md                   # Dokumentasi aplikasi yang menjelaskan cara menggunakan dan instalasi

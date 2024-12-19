@@ -93,9 +93,13 @@ o   pilihan style               : ditentukan masing-masing warna yang anda pilih
 - Masing masing Face memiliki Button untuk Exit jika dirasa pengguna tidak sesuai
 
 ## FLOWCHART
+![My Outfit Advisor ~Flowchart~](https://github.com/user-attachments/assets/65bc36c3-8989-493c-9872-3db28f1d96db)
 
 
-## SIDE MAP
+
+## SITE MAP
+![My Outfit Advisor ~Site Map~](https://github.com/user-attachments/assets/60b2f66e-5d99-4100-8c70-a1d4aa6be859)
+
 
 
 

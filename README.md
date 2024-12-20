@@ -98,13 +98,13 @@ o   pilihan style               : ditentukan masing-masing warna yang anda pilih
 
 
 ## SITE MAP
-![My Outfit Advisor ~Site Map~](https://github.com/user-attachments/assets/60b2f66e-5d99-4100-8c70-a1d4aa6be859)
+![My Outfit Advisor ~Site Map~_page-0001](https://github.com/user-attachments/assets/0017c98c-8bfb-47eb-819e-d350760cd9d4)
+
+
 
 
 
 
 
 ## Keterangan
-Berdasarkan input yang dipilih, program akan menampilkan rekomendasi outfit yang sesuai dengan trend, preferensi, dan warna yang telah dipilih berdasarkan kategori, sub kategori, dan gaya atau style nya.
-
-Akhir Program
+Berdasarkan input yang dipilih, program akan menampilkan ilustrasi rekomendasi outfit yang sesuai dengan trend, preferensi, dan warna yang telah dipilih berdasarkan kategori, sub kategori, dan style nya. Sistem ini hanya menampilkan rekomendasi outfit dan tidak menampilkan riwayat pilihan baik history outfit maupun algoritma outfit.
